@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Rabeeh V | BS Electronics Student</title>
+    <meta name="description"
+        content="Muhammed Rabeeh V - BS Electronics Student at IIT Madras. Passionate about electronics, mathematics, semiconductors, and innovative hardware-software integration projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Canvas for animated background -->
+    <canvas id="circuit-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-link active" data-section="home">HOME</a>
+            <a href="#projects" class="nav-link" data-section="projects">PROJECTS</a>
+            <a href="#skills" class="nav-link" data-section="skills">SKILLS</a>
+            <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <!-- Holographic Avatar -->
+            <div class="avatar-container">
+                <div class="avatar-glow"></div>
+                <div class="avatar-ring"></div>
+                <div class="avatar-photo">
+                    <img src="avatar.jpg" alt="Electronics Engineer">
+                </div>
+            </div>
+
+            <!-- Hero Text -->
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line" data-text="MUHAMMED RABEEH V">MUHAMMED RABEEH V</span>
+                </h1>
+                <p class="hero-subtitle">BS Electronics Student at IIT Madras | Passionate about Electronics,
+                    Mathematics & Semiconductors</p>
+                <a href="#projects" class="cta-button" id="cta-btn">
+                    <span class="cta-text">VIEW MY WORK</span>
+                    <span class="cta-border"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Electronics Elements -->
+        <div class="floating-elements">
+            <!-- Microchip 1 - top left -->
+            <div class="float-element chip" id="float-1" style="top: 8%; left: 5%;">
+                <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="15" y="15" width="50" height="50" rx="4" fill="none" stroke="#00f3ff" stroke-width="1.5"
+                        opacity="0.8" />
+                    <rect x="25" y="25" width="30" height="30" rx="2" fill="rgba(0,243,255,0.1)" stroke="#00f3ff"
+                        stroke-width="1" />
+                    <!-- Pins -->
+                    <line x1="25" y1="15" x2="25" y2="5" stroke="#00f3ff" stroke-width="1" opacity="0.6" />
+                    <line x1="40" y1="15" x2="40" y2="5" stroke="#00f3ff" stroke-width="1" opacity="0.6" />
+                    <line x1="55" y1="15" x2="55" y2="5" stroke="#00f3ff" stroke-width="1" opacity="0.6" />
+                    <line x1="25" y1="65" x2="25" y2="75" stroke="#00f3ff" stroke-width="1" opacity="0.6" />
+                    <line x1="40" y1="65" x2="40" y2="75" stroke="#00f3ff" stroke-width="1" opacity="0.6" />
+                    <line x1="55" y1="65" x2="55" y2="75" stroke="#00f3ff" stroke-width="1" opacity="0.6" />
+                    <line x1="15" y1="30" x2="5" y2="30" stroke="#00f3ff" stroke-width="1" opacity="0.6" />
+                    <line x1="15" y1="50" x2="5" y2="50" stroke="#00f3ff" stroke-width="1" opacity="0.6" />
+                    <line x1="65" y1="30" x2="75" y2="30" stroke="#00f3ff" stroke-width="1" opacity="0.6" />
+                    <line x1="65" y1="50" x2="75" y2="50" stroke="#00f3ff" stroke-width="1" opacity="0.6" />
+                </svg>
+            </div>
+            <!-- Oscilloscope - top right area -->
+            <div class="float-element oscilloscope" id="float-2" style="top: 5%; right: 8%;">
+                <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="5" width="90" height="60" rx="5" fill="rgba(0,243,255,0.05)" stroke="#00f3ff"
+                        stroke-width="1.5" />
+                    <rect x="10" y="10" width="55" height="40" rx="3" fill="rgba(0,20,30,0.8)" stroke="#00f3ff"
+                        stroke-width="1" />
+                    <!-- Waveform -->
+                    <polyline points="12,30 18,30 22,15 28,45 34,20 40,35 46,25 52,30 58,30 62,30" fill="none"
+                        stroke="#00ff88" stroke-width="1.5" />
+                    <!-- Knobs -->
+                    <circle cx="75" cy="20" r="5" fill="none" stroke="#bc13fe" stroke-width="1" />
+                    <circle cx="75" cy="35" r="5" fill="none" stroke="#bc13fe" stroke-width="1" />
+                    <circle cx="75" cy="50" r="3" fill="none" stroke="#00f3ff" stroke-width="1" />
+                    <rect x="20" y="55" width="30" height="6" rx="2" fill="rgba(188,19,254,0.2)" stroke="#bc13fe"
+                        stroke-width="0.5" />
+                </svg>
+            </div>
+            <!-- Resistor - right side -->
+            <div class="float-element resistor" id="float-3" style="top: 45%; right: 3%;">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="20" x2="25" y2="20" stroke="#00f3ff" stroke-width="2" />
+                    <line x1="95" y1="20" x2="120" y2="20" stroke="#00f3ff" stroke-width="2" />
+                    <polygon points="25,20 35,8 45,32 55,8 65,32 75,8 85,32 95,20" fill="none" stroke="#00f3ff"
+                        stroke-width="2" />
+                    <!-- Color bands -->
+                    <rect x="38" y="8" width="4" height="24" rx="1" fill="rgba(255,50,50,0.5)" />
+                    <rect x="50" y="8" width="4" height="24" rx="1" fill="rgba(188,19,254,0.5)" />
+                    <rect x="62" y="8" width="4" height="24" rx="1" fill="rgba(255,200,0,0.5)" />
+                    <rect x="78" y="8" width="4" height="24" rx="1" fill="rgba(0,243,255,0.3)" />
+                </svg>
+            </div>
+            <!-- Capacitor - bottom right -->
+            <div class="float-element capacitor" id="float-4" style="bottom: 25%; right: 10%;">
+                <svg viewBox="0 0 60 80" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="30" y1="0" x2="30" y2="25" stroke="#00f3ff" stroke-width="2" />
+                    <line x1="30" y1="55" x2="30" y2="80" stroke="#00f3ff" stroke-width="2" />
+                    <line x1="10" y1="25" x2="50" y2="25" stroke="#00f3ff" stroke-width="3" />
+                    <path d="M10 55 Q30 45 50 55" fill="none" stroke="#00f3ff" stroke-width="3" />
+                    <text x="30" y="42" text-anchor="middle" fill="#00f3ff" font-size="8" font-family="Orbitron"
+                        opacity="0.6">10µF</text>
+                </svg>
+            </div>
+            <!-- Waveform - left mid -->
+            <div class="float-element waveform" id="float-5" style="top: 15%; left: 22%;">
+                <svg viewBox="0 0 90 50" xmlns="http://www.w3.org/2000/svg">
+                    <polyline points="0,25 10,25 15,5 25,45 35,5 45,45 55,5 65,45 70,25 80,25 90,25" fill="none"
+                        stroke="#bc13fe" stroke-width="2" opacity="0.8" />
+                </svg>
+            </div>
+            <!-- Chip 2 - bottom left -->
+            <div class="float-element chip2" id="float-6" style="bottom: 28%; left: 3%;">
+                <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="10" width="50" height="50" rx="3" fill="rgba(188,19,254,0.08)" stroke="#bc13fe"
+                        stroke-width="1" />
+                    <rect x="20" y="20" width="30" height="30" rx="2" fill="rgba(0,243,255,0.05)" stroke="#00f3ff"
+                        stroke-width="0.8" />
+                    <line x1="20" y1="10" x2="20" y2="2" stroke="#bc13fe" stroke-width="1" />
+                    <line x1="35" y1="10" x2="35" y2="2" stroke="#bc13fe" stroke-width="1" />
+                    <line x1="50" y1="10" x2="50" y2="2" stroke="#bc13fe" stroke-width="1" />
+                    <line x1="20" y1="60" x2="20" y2="68" stroke="#bc13fe" stroke-width="1" />
+                    <line x1="35" y1="60" x2="35" y2="68" stroke="#bc13fe" stroke-width="1" />
+                    <line x1="50" y1="60" x2="50" y2="68" stroke="#bc13fe" stroke-width="1" />
+                    <line x1="10" y1="25" x2="2" y2="25" stroke="#bc13fe" stroke-width="1" />
+                    <line x1="10" y1="45" x2="2" y2="45" stroke="#bc13fe" stroke-width="1" />
+                    <line x1="60" y1="25" x2="68" y2="25" stroke="#bc13fe" stroke-width="1" />
+                    <line x1="60" y1="45" x2="68" y2="45" stroke="#bc13fe" stroke-width="1" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Skills Cards Row -->
+        <div class="skills-cards">
+            <div class="skill-card" data-delay="0">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" width="30" height="30" rx="3" fill="none" stroke="#00f3ff"
+                            stroke-width="1.5" />
+                        <rect x="16" y="16" width="18" height="18" rx="2" fill="rgba(0,243,255,0.15)" stroke="#00f3ff"
+                            stroke-width="0.8" />
+                        <line x1="16" y1="10" x2="16" y2="4" stroke="#00f3ff" stroke-width="1" />
+                        <line x1="25" y1="10" x2="25" y2="4" stroke="#00f3ff" stroke-width="1" />
+                        <line x1="34" y1="10" x2="34" y2="4" stroke="#00f3ff" stroke-width="1" />
+                        <line x1="16" y1="40" x2="16" y2="46" stroke="#00f3ff" stroke-width="1" />
+                        <line x1="25" y1="40" x2="25" y2="46" stroke="#00f3ff" stroke-width="1" />
+                        <line x1="34" y1="40" x2="34" y2="46" stroke="#00f3ff" stroke-width="1" />
+                        <line x1="10" y1="20" x2="4" y2="20" stroke="#00f3ff" stroke-width="1" />
+                        <line x1="10" y1="30" x2="4" y2="30" stroke="#00f3ff" stroke-width="1" />
+                        <line x1="40" y1="20" x2="46" y2="20" stroke="#00f3ff" stroke-width="1" />
+                        <line x1="40" y1="30" x2="46" y2="30" stroke="#00f3ff" stroke-width="1" />
+                    </svg>
+                </div>
+                <div class="skill-info">
+                    <h3>EMBEDDED SYSTEMS</h3>
+                    <p>Microcontroller programming & RTOS.</p>
+                </div>
+            </div>
+            <div class="skill-card" data-delay="100">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="8" width="40" height="34" rx="3" fill="none" stroke="#00f3ff"
+                            stroke-width="1.5" />
+                        <line x1="10" y1="17" x2="40" y2="17" stroke="#00f3ff" stroke-width="0.5" opacity="0.4" />
+                        <line x1="10" y1="25" x2="40" y2="25" stroke="#00f3ff" stroke-width="0.5" opacity="0.4" />
+                        <line x1="10" y1="33" x2="40" y2="33" stroke="#00f3ff" stroke-width="0.5" opacity="0.4" />
+                        <line x1="18" y1="8" x2="18" y2="42" stroke="#00f3ff" stroke-width="0.5" opacity="0.4" />
+                        <line x1="25" y1="8" x2="25" y2="42" stroke="#00f3ff" stroke-width="0.5" opacity="0.4" />
+                        <line x1="32" y1="8" x2="32" y2="42" stroke="#00f3ff" stroke-width="0.5" opacity="0.4" />
+                        <!-- Traces -->
+                        <path d="M12 14 L18 14 L18 20 L25 20 L25 28 L35 28" fill="none" stroke="#bc13fe"
+                            stroke-width="1.2" />
+                        <circle cx="12" cy="14" r="1.5" fill="#bc13fe" />
+                        <circle cx="35" cy="28" r="1.5" fill="#bc13fe" />
+                        <text x="25" y="47" text-anchor="middle" fill="#00f3ff" font-size="5" font-family="Orbitron"
+                            opacity="0.6">PCB</text>
+                    </svg>
+                </div>
+                <div class="skill-info">
+                    <h3>PCB DESIGN</h3>
+                    <p>Multilayer, high-speed & mixed-signal layouts.</p>
+                </div>
+            </div>
+            <div class="skill-card" data-delay="200">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Central node -->
+                        <circle cx="25" cy="25" r="6" fill="rgba(0,243,255,0.15)" stroke="#00f3ff" stroke-width="1.5" />
+                        <!-- Outer nodes -->
+                        <circle cx="10" cy="10" r="3" fill="none" stroke="#bc13fe" stroke-width="1" />
+                        <circle cx="40" cy="10" r="3" fill="none" stroke="#bc13fe" stroke-width="1" />
+                        <circle cx="10" cy="40" r="3" fill="none" stroke="#bc13fe" stroke-width="1" />
+                        <circle cx="40" cy="40" r="3" fill="none" stroke="#bc13fe" stroke-width="1" />
+                        <circle cx="25" cy="5" r="2.5" fill="none" stroke="#00f3ff" stroke-width="1" />
+                        <circle cx="25" cy="45" r="2.5" fill="none" stroke="#00f3ff" stroke-width="1" />
+                        <!-- Lines -->
+                        <line x1="13" y1="12" x2="21" y2="21" stroke="#00f3ff" stroke-width="0.8" opacity="0.6" />
+                        <line x1="37" y1="12" x2="29" y2="21" stroke="#00f3ff" stroke-width="0.8" opacity="0.6" />
+                        <line x1="13" y1="38" x2="21" y2="29" stroke="#00f3ff" stroke-width="0.8" opacity="0.6" />
+                        <line x1="37" y1="38" x2="29" y2="29" stroke="#00f3ff" stroke-width="0.8" opacity="0.6" />
+                        <line x1="25" y1="8" x2="25" y2="19" stroke="#00f3ff" stroke-width="0.8" opacity="0.6" />
+                        <line x1="25" y1="31" x2="25" y2="42" stroke="#00f3ff" stroke-width="0.8" opacity="0.6" />
+                    </svg>
+                </div>
+                <div class="skill-info">
+                    <h3>IoT</h3>
+                    <p>Smart devices & connectivity solutions.</p>
+                </div>
+            </div>
+            <div class="skill-card" data-delay="300">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="5" width="34" height="40" rx="3" fill="none" stroke="#00f3ff"
+                            stroke-width="1.5" />
+                        <line x1="12" y1="12" x2="28" y2="12" stroke="#bc13fe" stroke-width="1" />
+                        <line x1="12" y1="17" x2="35" y2="17" stroke="#00f3ff" stroke-width="0.8" opacity="0.5" />
+                        <line x1="15" y1="22" x2="32" y2="22" stroke="#00f3ff" stroke-width="0.8" opacity="0.5" />
+                        <line x1="15" y1="27" x2="30" y2="27" stroke="#00ff88" stroke-width="0.8" opacity="0.5" />
+                        <line x1="12" y1="32" x2="25" y2="32" stroke="#00f3ff" stroke-width="0.8" opacity="0.5" />
+                        <line x1="12" y1="37" x2="35" y2="37" stroke="#bc13fe" stroke-width="0.8" opacity="0.4" />
+                        <text x="14" y="12" fill="#bc13fe" font-size="4" font-family="monospace"
+                            opacity="0.8">#include</text>
+                    </svg>
+                </div>
+                <div class="skill-info">
+                    <h3>FIRMWARE DEVELOPMENT</h3>
+                    <p>Efficient C/C++ programming & driver development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section id="projects" class="section projects-section">
+        <div class="section-header">
+            <h2 class="section-title glitch" data-text="PROJECTS">PROJECTS</h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">Featured engineering projects and innovations</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-placeholder">
+                        <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Phone/App -->
+                            <rect x="15" y="10" width="25" height="40" rx="3" fill="rgba(0,243,255,0.05)"
+                                stroke="#00f3ff" stroke-width="1" />
+                            <rect x="18" y="14" width="19" height="28" rx="1" fill="rgba(0,243,255,0.1)"
+                                stroke="#00f3ff" stroke-width="0.5" />
+                            <circle cx="27.5" cy="46" r="2" fill="none" stroke="#00f3ff" stroke-width="0.8" />
+                            <!-- Bluetooth waves -->
+                            <path d="M45 25 Q50 20 55 25" fill="none" stroke="#bc13fe" stroke-width="1.5" />
+                            <path d="M45 30 Q50 30 55 30" fill="none" stroke="#bc13fe" stroke-width="1.5" />
+                            <path d="M45 35 Q50 40 55 35" fill="none" stroke="#bc13fe" stroke-width="1.5" />
+                            <!-- Arduino/Display -->
+                            <rect x="65" y="15" width="25" height="30" rx="2" fill="rgba(188,19,254,0.05)"
+                                stroke="#bc13fe" stroke-width="1" />
+                            <rect x="68" y="18" width="19" height="15" rx="1" fill="rgba(0,243,255,0.08)"
+                                stroke="#00f3ff" stroke-width="0.5" />
+                            <line x1="70" y1="38" x2="75" y2="38" stroke="#00ff88" stroke-width="1" />
+                            <line x1="78" y1="38" x2="85" y2="38" stroke="#00ff88" stroke-width="1" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Scooter Navigation System</h3>
+                    <p>Android app integrated with Google Maps API, Arduino, and Bluetooth module. Displays turn-by-turn
+                        navigation on a scooter-mounted display with real-time direction updates.</p>
+                    <div class="project-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Bluetooth</span>
+                        <span class="tag">Google Maps API</span>
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <span class="view-project">VIEW DETAILS →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section id="skills" class="section skills-section">
+        <div class="section-header">
+            <h2 class="section-title glitch" data-text="SYSTEM STATUS">SYSTEM STATUS</h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">Technical capabilities & proficiency levels</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-bar-card">
+                <div class="skill-bar-header">
+                    <span class="skill-name">C Programming</span>
+                    <span class="skill-percent" data-target="85">0%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="85"></div>
+                </div>
+            </div>
+            <div class="skill-bar-card">
+                <div class="skill-bar-header">
+                    <span class="skill-name">Web Development (HTML/CSS/JS/React)</span>
+                    <span class="skill-percent" data-target="88">0%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="88"></div>
+                </div>
+            </div>
+            <div class="skill-bar-card">
+                <div class="skill-bar-header">
+                    <span class="skill-name">Mobile App Development (Flutter)</span>
+                    <span class="skill-percent" data-target="80">0%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+            </div>
+            <div class="skill-bar-card">
+                <div class="skill-bar-header">
+                    <span class="skill-name">Hardware (Arduino/ESP32)</span>
+                    <span class="skill-percent" data-target="82">0%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="82"></div>
+                </div>
+            </div>
+            <div class="skill-bar-card">
+                <div class="skill-bar-header">
+                    <span class="skill-name">PCB Design</span>
+                    <span class="skill-percent" data-target="75">0%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="75"></div>
+                </div>
+            </div>
+            <div class="skill-bar-card">
+                <div class="skill-bar-header">
+                    <span class="skill-name">MATLAB</span>
+                    <span class="skill-percent" data-target="78">0%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="78"></div>
+                </div>
+            </div>
+            <div class="skill-bar-card">
+                <div class="skill-bar-header">
+                    <span class="skill-name">AutoCAD</span>
+                    <span class="skill-percent" data-target="70">0%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="70"></div>
+                </div>
+            </div>
+            <div class="skill-bar-card">
+                <div class="skill-bar-header">
+                    <span class="skill-name">Mathematics & Semiconductors</span>
+                    <span class="skill-percent" data-target="90">0%</span>
+                </div>
+                <div class="skill-bar-track">
+                    <div class="skill-bar-fill" data-width="90"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section contact-section">
+        <div class="section-header">
+            <h2 class="section-title glitch" data-text="ESTABLISH LINK">ESTABLISH LINK</h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">Send a transmission — Let's build something amazing</p>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label class="form-label">IDENTIFIER_</label>
+                    <input type="text" class="form-input" id="contact-name" placeholder="Enter your name" required>
+                    <span class="input-line"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">EMAIL_ADDR_</label>
+                    <input type="email" class="form-input" id="contact-email" placeholder="Enter your email" required>
+                    <span class="input-line"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">SUBJECT_</label>
+                    <input type="text" class="form-input" id="contact-subject" placeholder="Enter subject" required>
+                    <span class="input-line"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">MESSAGE_DATA_</label>
+                    <textarea class="form-input form-textarea" id="contact-message" placeholder="Enter your message..."
+                        rows="5" required></textarea>
+                    <span class="input-line"></span>
+                </div>
+                <button type="submit" class="transmit-btn" id="transmit-btn">
+                    <span class="btn-text">⚡ TRANSMIT</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+            <div class="contact-info-panel">
+                <div class="info-block">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h4>LOCATION</h4>
+                        <p>Tirurangadi, Kerala, India</p>
+                    </div>
+                </div>
+                <a href="mailto:rabeehvailassery@gmail.com" class="info-block">
+                    <div class="info-icon">📧</div>
+                    <div>
+                        <h4>EMAIL</h4>
+                        <p>rabeehvailassery@gmail.com</p>
+                    </div>
+                </a>
+                <a href="tel:+919778024083" class="info-block">
+                    <div class="info-icon">📱</div>
+                    <div>
+                        <h4>PHONE</h4>
+                        <p>+91 9778024083</p>
+                    </div>
+                </a>
+                <a href="https://github.com/rabeeh20" target="_blank" rel="noopener noreferrer" class="info-block">
+                    <div class="info-icon">🔗</div>
+                    <div>
+                        <h4>GITHUB</h4>
+                        <p>github.com/rabeeh20</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/muhammed-rabeeh-v" target="_blank" rel="noopener noreferrer"
+                    class="info-block">
+                    <div class="info-icon">💼</div>
+                    <div>
+                        <h4>LINKEDIN</h4>
+                        <p>linkedin.com/in/muhammed-rabeeh-v</p>
+                    </div>
+                </a>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">status.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="terminal-line"><span class="prompt">$</span> system.status</p>
+                        <p class="terminal-line output">→ ONLINE | Ready for collaboration</p>
+                        <p class="terminal-line"><span class="prompt">$</span> availability.check</p>
+                        <p class="terminal-line output">→ Open to new projects</p>
+                        <p class="terminal-line"><span class="prompt">$</span> <span class="cursor">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2026 Muhammed Rabeeh V. All systems operational.</p>
+            <div class="footer-links">
+                <a href="https://github.com/rabeeh20" target="_blank" class="footer-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/muhammed-rabeeh-v" target="_blank" class="footer-link">LinkedIn</a>
+                <a href="mailto:rabeehvailassery@gmail.com" class="footer-link">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2 id="modal-title">Project Title</h2>
+                <div id="modal-tags" class="project-tags"></div>
+                <p id="modal-description">Project description goes here.</p>
+                <div class="modal-image-container" id="modal-image"></div>
+                <!-- Placeholder for future links -->
+                <a href="#" class="modal-link" id="modal-link">VIEW SOURCE CODE (GITHUB)</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
